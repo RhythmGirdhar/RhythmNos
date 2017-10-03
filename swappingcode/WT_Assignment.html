@@ -1,0 +1,67 @@
+<!-- Swapping Pictures in A Photo Grid -->
+<html>
+    <head>
+    <script>
+        function swap19()
+        {
+            var tempa = document.getElementById('first');
+            var imagea = tempa.getAttribute('src'); //Source of the First Picture
+            var tempb = document.getElementById('ninth');
+            var imageb = tempb.getAttribute('src'); //Source of the Ninth Picture
+            var swapa = tempa.setAttribute('src',imageb);
+            var swapb = tempb.setAttribute('src',imagea);
+        }
+
+        function swap28()
+        {
+            var tempa = document.getElementById('second');
+            var imagea = tempa.getAttribute('src'); //Source of the second Picture
+            var tempb = document.getElementById('eighth');
+            var imageb = tempb.getAttribute('src'); //Source of the eighth Picture
+            var swapa = tempa.setAttribute('src',imageb);
+            var swapb = tempb.setAttribute('src',imagea);
+        }
+
+        function swap35()
+        {
+        var tempa = document.getElementById('third');
+        var imagea = tempa.getAttribute('src'); //Source of the third picture
+        var tempb = document.getElementById('fifth');
+        var imageb = tempb.getAttribute('src'); //Source of the fifth picture
+        var swapa = tempa.setAttribute('src',imageb);
+        var swapb = tempb.setAttribute('src',imagea);
+        }
+    
+        function swap46()
+        {
+            var tempa = document.getElementById('fourth');
+            var imagea = tempa.getAttribute('src'); //Source of the fourth picture
+            var tempb = document.getElementById('sixth');
+            var imageb = tempb.getAttribute('src'); //Source of the sixth picture
+            var swapa = tempa.setAttribute('src',imageb);
+            var swapa = tempb.setAttribute('src',imagea);
+        }
+    </script>
+    </head> 
+<body>
+    <table border=5px solid black cellspacing ='0' border-color="blue">
+        <tr>
+            <td onclick="swap19()"><img src='image1.jpg' width=50px height=50px id='first' alt='image1'></td>
+            <td onclick="swap28()"><img src="image2.jpg" width=50px height=50px id="second" alt='image2'></td>
+            <td onclick="swap35()"><img src="image3.png" width=50px height=50px id="third" alt='image3'></td>
+        </tr>
+        <tr>
+            <td onclick="swap46()"><img src='image4.jpg' width=50px height=50px id="fourth" alt='image4'></td>
+            <td onclick="swap35()"><img src='image5.jpg' width=50px height=50px id="fifth" alt='image5'></td>
+            <td onclick="swap46()"><img src='image6.jpg' width=50px height=50px id="sixth" alt='image6'></td>
+        </tr>
+        <tr>
+            <td><img src='image7.jpg' width=50px height=50px id="seventh" alt='image7'></td>
+            <td onclick="swap28()"><img src='image8.jpg' width=50px height=50px id="eighth" alt='image8'></td>
+            <td onclick="swap19()"><img src='image9.jpg' width=50px height=50px id="ninth" alt='image9'></td>
+        </tr>
+    </table>
+</body>
+
+
+</html>
